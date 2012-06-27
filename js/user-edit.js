@@ -1,16 +1,15 @@
-//var toString = Object.prototype.toString;
-
 function subject1()
 {
     $("span#subject01_result").html($("p#yamada_name").text());
 }
 
+
 function subject2()
 {
     if(this["id"] === "add_sakurako"){
-	$($('div#subject2 ul#member_list li')[0]).before("<li>櫻子</li>");
-    }else{
-	$($('div#subject2 ul#member_list li')[0]).before("<li>向日葵</li>");
+	$('div#subject2 ul#member_list').prepend("<li>櫻子</li>");
+    }else if(this["id"] === "add_himawari"){
+	$('div#subject2 ul#member_list').prepend("<li>向日葵</li>");
     }
 }
 
@@ -23,7 +22,6 @@ function subject3()
 	}
     });
 }
-
 
 
 function subject4()
@@ -46,7 +44,6 @@ function init()
     $("div#subject3 a#remove_akari").click(subject3);
     $("div#subject4 a#change_visible_momo").click(subject4);
     $("div#subject5 a#change_header_html").click(subject5);
-
 }
 
 $(document).ready(init);
