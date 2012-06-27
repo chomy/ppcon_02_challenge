@@ -16,11 +16,7 @@ function subject2()
 
 function subject3()
 {
-    $("div#subject3 ul#member_list_remove li").each(function (){
-	if(this['id'] === "akari"){
-	    $(this).remove()
-	}
-    });
+    $("div#subject3 ul#member_list_remove li#akari").remove();
 }
 
 
