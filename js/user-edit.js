@@ -2,7 +2,7 @@
 
 function subject1()
 {
-    $("div#subject01_result").html($("div#yamada_name").html());
+    $("span#subject01_result").html($("p#yamada_name").text());
 }
 
 function subject2()
@@ -28,7 +28,7 @@ function subject3()
 
 function subject4()
 {
-    $("div#subject4 div#stealth_momo").toggle();
+    $("div#subject4 p#stealth_momo").toggle();
 }
 
 
