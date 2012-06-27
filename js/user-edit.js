@@ -32,7 +32,9 @@ function subject4()
 
 function subject5()
 {
-    $("div#subject5 h2").html("【" + $("div#subject5 h2").html() + "】");
+    $("h2").each(function(){
+	$(this).html("【" + $(this).html() + "】");
+    });
 }
 
 
